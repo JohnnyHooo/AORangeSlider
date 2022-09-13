@@ -169,7 +169,7 @@ import UIKit
     @objc open var highTouchEdgeInsets = UIEdgeInsets(top: -5, left: -5, bottom: -5, right: -5)
 
     /// the imageView of value bar
-    var trackImageView: UIImageView!
+    public var trackImageView: UIImageView!
 
     /// the length of default ball
     private let systemBallLength: CGFloat = 28.0
@@ -249,9 +249,9 @@ import UIKit
     private var trackBackgroundImageView: UIImageView!
 
     /// Keep it private, given that it is useless to change its image directly
-    private var lowHandle: UIImageView!
+    public var lowHandle: UIImageView!
     /// Keep it private, given that it is useless to change its image directly
-    private var highHandle: UIImageView!
+    public var highHandle: UIImageView!
 
     private var lowTouchOffset = 0.0
     private var highTouchOffset = 0.0
